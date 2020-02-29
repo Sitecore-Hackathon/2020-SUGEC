@@ -1,0 +1,32 @@
+﻿@using Sitecore.Mvc
+
+<section class="page-section bg-transparent" id="events">
+    <div class="container">
+        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+        {
+            <div class="row">
+                <div class="col col-sm-4">
+                    @Html.Sitecore().Placeholder("Column4")
+                </div>
+                <div class="col col-sm-4">
+                    @Html.Sitecore().Placeholder("Column4-1")
+                </div>
+                <div class="col col-sm-4">
+                    @Html.Sitecore().Placeholder("Column4-2")
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="row">
+                <div class="card-group">
+                    @Html.Sitecore().Placeholder("Column4")
+
+                    @Html.Sitecore().Placeholder("Column4-1")
+
+                    @Html.Sitecore().Placeholder("Column4-2")
+                </div>
+            </div>
+        }
+    </div>
+</section>

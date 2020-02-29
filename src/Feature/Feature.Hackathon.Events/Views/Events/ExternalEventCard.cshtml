@@ -1,0 +1,22 @@
+﻿@using Foundation.Hackathon.Helpers.Helpers
+@using Sitecore.Mvc
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<div class="card" style="margin: 5px;" >
+    @Html.Sitecore().Field("Image", new { @class = "card-img-top"})
+
+    <div class="card-body">
+        <h5 class="card-title">@Html.Sitecore().Field("Title")</h5>
+        <h6 class="card-subtitle mb-2 text-muted">@Html.Sitecore().Field("Date") | @Html.Sitecore().Field("Location")</h6>
+        @if (!Sitecore.Context.PageMode.IsExperienceEditorEditing)
+        {
+            <p class="card-text">@Model.Item["Description"].TruncateWords(200, "...")</p>
+        }
+        else
+        {
+            <p class="card-text">@Html.Sitecore().Field("Description").</p>
+        }
+
+        @Html.Sitecore().Field("Link", new { @class = "btn btn-primary" })
+    </div>
+</div>

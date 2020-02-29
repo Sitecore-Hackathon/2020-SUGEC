@@ -1,0 +1,7 @@
+﻿@using Sitecore.Mvc
+@model Feature.Hackathon.Events.Models.EventTeamsViewModel
+
+@foreach (var team in Model.Teams)
+{
+    <h3>@Html.Sitecore().Field("Team Name", team)</h3>
+}

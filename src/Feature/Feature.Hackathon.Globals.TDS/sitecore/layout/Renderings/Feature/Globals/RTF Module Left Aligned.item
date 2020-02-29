@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {72D41FA9-B22A-4E69-A67A-8E96D23C1FA5}
+database: master
+path: /sitecore/layout/Renderings/Feature/Globals/RTF Module Left Aligned
+parent: {F3F716A2-0A0A-4AE5-8A21-924475A43331}
+name: RTF Module Left Aligned
+master: {00000000-0000-0000-0000-000000000000}
+template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
+templatekey: View rendering
+
+----field----
+field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
+name: Path
+key: path
+content-length: 43
+
+~/Views/Globals/RTFModuleLeftAligned.cshtml
+----field----
+field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
+name: Datasource Location
+key: datasource location
+content-length: 47
+
+/sitecore/content/Hackathon/Modules/RTF Modules
+----field----
+field: {1A7C85E5-DC0B-490D-9187-BB1DBCB4C72F}
+name: Datasource Template
+key: datasource template
+content-length: 56
+
+/sitecore/templates/Project/Hackathon/Modules/RTF Module
+----field----
+field: {E441ABE7-2CA3-4640-AE26-3789967925D7}
+name: Compatible Renderings
+key: compatible renderings
+content-length: 38
+
+{314E55FD-6C2D-4926-ACE7-EF8A300ECF2C}
+----version----
+language: en
+version: 1
+revision: f652df86-90df-4463-b5d0-5b8f9945be2f
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20200229T051553Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f652df86-90df-4463-b5d0-5b8f9945be2f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20200229T121859Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {F10DBEF6-F616-4232-B910-F587A97B46CA}
+database: master
+path: /sitecore/content/Hackathon/Home/Events/Hackathon 2019/Santas Little Helper
+parent: {6067A191-7D36-4355-86B4-A0111901693B}
+name: Santas Little Helper
+master: {00000000-0000-0000-0000-000000000000}
+template: {D83937F3-2F5D-41A3-8868-03F148ED43F2}
+templatekey: Team
+
+----version----
+language: en
+version: 1
+revision: 7962c42c-ea30-4335-9c2d-755568915742
+
+----field----
+field: {0C8EE320-D31B-4CBD-AC10-3A8C1FBC11EE}
+name: Team Name
+key: team name
+content-length: 21
+
+Santa’s Little Helper
+----field----
+field: {4C6D8BF3-7A7C-45FC-BD63-B4F0DF31084A}
+name: Email
+key: email
+content-length: 13
+
+mail@mail.com
+----field----
+field: {6D11BB48-4F7A-4E98-9960-A94754956635}
+name: Created Date
+key: created date
+content-length: 16
+
+20190206T122800Z
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20200229T122801Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7962c42c-ea30-4335-9c2d-755568915742
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20200229T122833Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

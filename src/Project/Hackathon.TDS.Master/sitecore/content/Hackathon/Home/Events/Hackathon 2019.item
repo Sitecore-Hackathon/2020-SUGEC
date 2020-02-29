@@ -1,0 +1,78 @@
+----item----
+version: 1
+id: {6067A191-7D36-4355-86B4-A0111901693B}
+database: master
+path: /sitecore/content/Hackathon/Home/Events/Hackathon 2019
+parent: {56A2C847-603D-4941-9EC4-65CAC9E11AE7}
+name: Hackathon 2019
+master: {00000000-0000-0000-0000-000000000000}
+template: {6BF04F50-FDCB-4D42-9EA6-64096DD7696E}
+templatekey: Event Detail Page
+
+----version----
+language: en
+version: 1
+revision: fd52c808-a5e1-42dc-9de4-b09294fd9176
+
+----field----
+field: {4F4B97B5-90E9-41E4-AB85-DA80A2FB1938}
+name: Title
+key: title
+content-length: 23
+
+SITECORE HACKATHON 2019
+----field----
+field: {50C83F75-941E-4B34-8F9E-9195084A57FF}
+name: Heading
+key: heading
+content-length: 10
+
+Categories
+----field----
+field: {A8C4BE3B-754E-40D6-A1FE-D4C390039A5F}
+name: Copy
+key: copy
+content-length: 486
+
+<p>Ideas for the hackathon:<br />
+- Best enhancement to the Sitecore Admin (XP) UI for Content Editors &amp; Marketers<br />
+- Best enhancement to Sitecore Commerce Business Tools UI<br />
+- Best extension of the editing experience for SXA in Experience Editor<br />
+- Best use of SPE to help Content authors and Marketers<br />
+- Best enhancement to JSS to change a JSS component rendering behavior based on user’s session data<br />
+- Best use of xConnect and/or Universal Tracker</p>
+----field----
+field: {DB7529F3-F20B-476F-BE92-FC34B8859B82}
+name: Title
+key: title
+content-length: 14
+
+Hackathon 2019
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20200229T110446Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fd52c808-a5e1-42dc-9de4-b09294fd9176
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20200229T122324Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
