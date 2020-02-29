@@ -18,9 +18,19 @@ namespace Foundation.Hackathon.Helpers.Helpers
             return GetItemByPath(GetStartItemPath());
         }
 
+        public static Item GetRootItem()
+        {
+            return GetItemByPath(GetRootItemPath());
+        }
+
         public static string GetStartItemPath()
         {
             return Sitecore.Context.Site.StartPath;
+        }
+
+        public static string GetRootItemPath()
+        {
+            return Sitecore.Context.Site.RootPath;
         }
 
         public static SiteInfo GetItemSite(Item itemYouNeedToCheck)

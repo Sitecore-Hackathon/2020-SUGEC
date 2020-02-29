@@ -1,25 +1,18 @@
 ----item----
 version: 1
-id: {3E2B344E-600D-42BE-82E1-7A81F5133695}
+id: {FF96814D-AC63-4421-9527-B8B3E29ACF0E}
 database: master
-path: /sitecore/templates/Project/Hackathon/Pages/Home Page/__Standard Values
-parent: {90F27B7C-6D9A-4E45-897D-AA5ABEC6CF3F}
-name: __Standard Values
+path: /sitecore/content/Hackathon/Home/Page 1
+parent: {70C3D40D-B240-4E66-A34F-9E44E2B4110F}
+name: Page 1
 master: {00000000-0000-0000-0000-000000000000}
-template: {90F27B7C-6D9A-4E45-897D-AA5ABEC6CF3F}
-templatekey: Home Page
+template: {1B0B9A11-BB2A-4AF2-A300-717AF1BC89FD}
+templatekey: Generic Page
 
-----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 359
-
-<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{A75EABE2-5B94-4CA5-B991-13902B081F69}"><r id="{04294A51-DAA1-4278-BB26-7DDE8F7EF693}" ph="Footer" uid="{1B86D03B-3EAE-42B3-8F1F-CF73FBF4D926}" /><r id="{4B04535F-80F5-4C8B-83F5-92B407C1ABB3}" ph="Header" uid="{F18E9619-2FCA-4C57-8A40-3F91B837042B}" /></d></r>
 ----version----
 language: en
 version: 1
-revision: 41888333-5f7f-43eb-9761-02f460044344
+revision: 91b4d952-1675-4bce-9b7e-6efc39249450
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -34,7 +27,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20200229T025039Z
+20200229T064921Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-41888333-5f7f-43eb-9761-02f460044344
+91b4d952-1675-4bce-9b7e-6efc39249450
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20200229T065102Z
+20200229T064921Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
