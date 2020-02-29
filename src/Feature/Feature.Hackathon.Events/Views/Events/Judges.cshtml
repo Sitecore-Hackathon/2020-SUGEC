@@ -1,0 +1,31 @@
+﻿@using Foundation.Hackathon.Helpers.Helpers
+@using Sitecore.Links
+@using Sitecore.Mvc
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<section class="page-section text-center" id="portfolio">
+    <h2>@Html.Sitecore().Field("Events Title")</h2>
+    <div class="container-fluid p-0">
+        <div class="row no-gutters d-flex justify-content-center">
+
+            @foreach (var item in ItemHelper.GetMultiListParameterItems(Sitecore.Context.Item["Judges"]))
+            {
+                <div class="col-lg-2">
+
+                    <a class="portfolio-box" href="/">
+                        @Html.Sitecore().Field("Profile Image", item, new { @class = "img-fluid" })
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">
+                                @Html.Sitecore().Field("Full Name", item)
+                            </div>
+                            <div class="project-category text-white-50">
+                                <a href="@ItemHelper.GetGeneralLinkUrl(item, "Twitter")"><img src="/assets/Images/twitter.png" /></a>
+                                <a href="@ItemHelper.GetGeneralLinkUrl(item, "LinkedIn")"><img src="/assets/Images/linkedin.png" /></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</section>

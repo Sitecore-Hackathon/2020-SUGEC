@@ -130,6 +130,8 @@
     <Content Include="assets\css\bootstrap.css" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\creative.min.css" />
+    <Content Include="assets\Images\linkedin.png" />
+    <Content Include="assets\Images\twitter.png" />
     <Content Include="assets\js\bootstrap.bundle.js" />
     <Content Include="assets\js\bootstrap.bundle.min.js" />
     <Content Include="assets\js\bootstrap.js" />
