@@ -112,6 +112,7 @@
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Views\Events\EventListing.cshtml" />
     <Content Include="Views\Events\EventTeams.cshtml" />
+    <Content Include="Views\Events\Judges.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
