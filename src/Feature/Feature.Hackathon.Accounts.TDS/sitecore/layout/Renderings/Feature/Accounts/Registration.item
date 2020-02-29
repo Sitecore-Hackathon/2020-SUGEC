@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {C88DAE1B-A8EB-4AC4-A5BC-DE271B5D66D0}
+database: master
+path: /sitecore/layout/Renderings/Feature/Accounts/Registration
+parent: {4AECF8B7-A023-4227-97FC-26FDB5744674}
+name: Registration
+master: {00000000-0000-0000-0000-000000000000}
+template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
+templatekey: Controller rendering
+
+----field----
+field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
+name: Controller
+key: controller
+content-length: 89
+
+Feature.Hackathon.Accounts.Controllers.RegistrationController, Feature.Hackathon.Accounts
+----version----
+language: en
+version: 1
+revision: 559f77cf-5325-41bb-b3ab-34b6fc603f3a
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20200229T104102Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+559f77cf-5325-41bb-b3ab-34b6fc603f3a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20200229T105805Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
