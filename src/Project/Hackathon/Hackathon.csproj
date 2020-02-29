@@ -196,6 +196,7 @@
     <Content Include="assets\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="assets\vendor\jquery\jquery.min.map" />
     <Content Include="assets\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="App_Config\Include\Project\SiteDefinition.config" />
     <None Include="packages.config" />
     <Content Include="Web.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
