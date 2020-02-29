@@ -4,11 +4,20 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Feature.Hackathon.Accounts.Models;
+using Feature.Hackathon.Accounts.Repositories;
 
 namespace Feature.Hackathon.Accounts.Controllers
 {
     public class RegistrationController : Controller
     {
+        private readonly string _redirectionUrl = "/registration/success";
+        protected RegistrationRepository Repository { get; set; }
+
+        public RegistrationController()
+        {
+            Repository = new RegistrationRepository();
+        }
+
         // GET: Registration
         public ActionResult Index()
         {
@@ -19,8 +28,8 @@ namespace Feature.Hackathon.Accounts.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Index(RegistrationForm formData)
         {
-
-            return Redirect("/");
+            Repository.CreateTeamItem(formData);
+            return Redirect(_redirectionUrl);
         }
     }
 }

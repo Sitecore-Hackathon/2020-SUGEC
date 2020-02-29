@@ -12,8 +12,22 @@ templatekey: Event Detail Page
 ----version----
 language: en
 version: 1
-revision: 46896657-e0d0-445d-99d1-93945842b497
+revision: 0a48a21f-cc34-4c2d-9c2e-d67923b8ef9c
 
+----field----
+field: {909C72CA-567A-48B7-914F-0A727F1F9756}
+name: Start Registration Date
+key: start registration date
+content-length: 16
+
+20170217T185700Z
+----field----
+field: {68455B5C-259F-45C9-8135-F9DA4CDE95D8}
+name: End Registration Date
+key: end registration date
+content-length: 16
+
+20170227T185700Z
 ----field----
 field: {DB7529F3-F20B-476F-BE92-FC34B8859B82}
 name: Title
@@ -34,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-46896657-e0d0-445d-99d1-93945842b497
+0a48a21f-cc34-4c2d-9c2e-d67923b8ef9c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20200229T110423Z
+20200229T185800Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
