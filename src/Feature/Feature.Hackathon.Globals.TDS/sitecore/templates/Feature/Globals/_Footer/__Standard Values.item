@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {1958A786-9C41-4D7B-BF0D-8E1057E38CCB}
+database: master
+path: /sitecore/templates/Feature/Globals/_Footer/__Standard Values
+parent: {2D9F6F1A-E8BD-45FE-B380-FF4A4914FC36}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {2D9F6F1A-E8BD-45FE-B380-FF4A4914FC36}
+templatekey: _Footer
+
+----version----
+language: en
+version: 1
+revision: 7741dcea-0bbd-42d6-bb58-50188d070483
+
+----field----
+field: {8BB77A53-4746-4F9A-91E4-079F30E2BED0}
+name: Copyright
+key: copyright
+content-length: 36
+
+Copyright © {0} - Sitecore Hackathon
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20200229T050950Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7741dcea-0bbd-42d6-bb58-50188d070483
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20200229T051013Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
