@@ -1,0 +1,66 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Configuration
+@model Sitecore.Mvc.Presentation.RenderingModel
+<section class="page-section" id="about">
+<div class="container">
+    <div class="row justify-content-center">
+    @using (Html.BeginRouteForm(MvcSettings.SitecoreRouteName, FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            <label for="exampleInputEmail1">@Html.Sitecore().Field("Name Placeholder")</label>
+            <input type="email" class="form-control" name="name1" aria-describedby="emailHelp" placeholder="Enter @Html.Sitecore().Field("Name Placeholder")">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">@Html.Sitecore().Field("Email Placeholder")</label>
+            <input type="email" class="form-control" name="email1" aria-describedby="emailHelp" placeholder="Enter @Html.Sitecore().Field("Email Placeholder")">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">@Html.Sitecore().Field("LinkedIn Placeholder")</label>
+            <input type="email" class="form-control" name="linkedin1" aria-describedby="emailHelp" placeholder="Enter @Html.Sitecore().Field("LinkedIn Placeholder")">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">@Html.Sitecore().Field("Twitter Placeholder")</label>
+            <input type="email" class="form-control" name="twitter1" aria-describedby="emailHelp" placeholder="Enter @Html.Sitecore().Field("Twitter Placeholder")">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">@Html.Sitecore().Field("Name Placeholder")</label>
+            <input type="email" class="form-control" name="name2" aria-describedby="emailHelp" placeholder="Enter @Html.Sitecore().Field("Name Placeholder")ail">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">@Html.Sitecore().Field("Email Placeholder")</label>
+            <input type="email" class="form-control" name="email2" aria-describedby="emailHelp" placeholder="Enter @Html.Sitecore().Field("Email Placeholder")">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">@Html.Sitecore().Field("LinkedIn Placeholder")</label>
+            <input type="email" class="form-control" name="linkedin2" aria-describedby="emailHelp" placeholder="Enter @Html.Sitecore().Field("LinkedIn Placeholder")">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">@Html.Sitecore().Field("Twitter Placeholder")</label>
+            <input type="email" class="form-control" name="twitter2" aria-describedby="emailHelp" placeholder="Enter @Html.Sitecore().Field("Twitter Placeholder")">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">@Html.Sitecore().Field("Name Placeholder")</label>
+            <input type="email" class="form-control" name="name3" aria-describedby="emailHelp" placeholder="Enter @Html.Sitecore().Field("Name Placeholder")">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">@Html.Sitecore().Field("Email Placeholder")</label>
+            <input type="email" class="form-control" name="email3" aria-describedby="emailHelp" placeholder="Enter @Html.Sitecore().Field("Email Placeholder")">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">@Html.Sitecore().Field("LinkedIn Placeholder")</label>
+            <input type="email" class="form-control" name="linkedin3" aria-describedby="emailHelp" placeholder="Enter @Html.Sitecore().Field("LinkedIn Placeholder")">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">@Html.Sitecore().Field("Twitter Placeholder")</label>
+            <input type="email" class="form-control" name="twitter3" aria-describedby="emailHelp" placeholder="Enter @Html.Sitecore().Field("Twitter Placeholder")">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">@Html.Sitecore().Field("Team Name Placeholder")</label>
+            <input type="email" class="form-control" name="TeamName" aria-describedby="emailHelp" placeholder="Enter @Html.Sitecore().Field("Team Name Placeholder")">
+        </div>
+        <button type="submit" class="btn btn-primary">@Html.Sitecore().Field("Submit Button Text")</button>
+    }
+    </div>
+</div>
+</section>
