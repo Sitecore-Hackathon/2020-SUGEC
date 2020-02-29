@@ -1,0 +1,14 @@
+﻿@using Sitecore.Mvc
+@model Sitecore.Mvc.Presentation.RenderingModel
+    
+<section class="page-section bg-primary" id="about">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">@Html.Sitecore().Field("Heading")</h2>
+                <hr class="divider light my-4">
+                @Html.Sitecore().Field("Copy")
+            </div>
+        </div>
+    </div>
+</section>

@@ -126,6 +126,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Global.asax" />
+    <Content Include="Views\Globals\RTFModule.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
