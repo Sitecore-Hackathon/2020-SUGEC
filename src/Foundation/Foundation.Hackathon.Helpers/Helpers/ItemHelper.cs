@@ -123,30 +123,15 @@ namespace Foundation.Hackathon.Helpers.Helpers
             return LinkManager.GetItemUrl(item, options);
         }
 
-        public static string GetImageUrl(Item currentItem, int maxWidth = 0, int width = 0, int maxHeight = 0)
+        public static string GetImageUrl(Item currentItem, string fieldName)
         {
             if (currentItem == null)
                 return null;
 
-            var image = (MediaItem)currentItem;
-
-            // If there's options specified, add them to the options object.
-            if (width > 0 || maxWidth > 0 || maxHeight > 0)
-            {
-                var options = new MediaUrlOptions();
-                if (width > 0)
-                    options.Width = width;
-                if (maxWidth > 0)
-                    options.MaxWidth = maxWidth;
-                if (maxHeight > 0)
-                    options.MaxHeight = maxHeight;
-
-                return StringUtil.EnsurePrefix('/',
-                    HashingUtils.ProtectAssetUrl(MediaManager.GetMediaUrl(image, options)));
-            }
-
+            ImageField imageField = currentItem.Fields[fieldName];
+            var image = (MediaItem) imageField.MediaItem;
             // Otherwise, get the image with no options specified.
-            return StringUtil.EnsurePrefix('/', MediaManager.GetMediaUrl(image));
+            return HashingUtils.ProtectAssetUrl(MediaManager.GetMediaUrl(image, new MediaUrlOptions(){AlwaysIncludeServerUrl = true}));
         }
 
         public static string GetGeneralFullLinkUrl(LinkField linkField)
