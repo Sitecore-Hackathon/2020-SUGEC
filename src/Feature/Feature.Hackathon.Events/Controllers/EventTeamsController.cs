@@ -14,7 +14,7 @@ namespace Feature.Hackathon.Events.Controllers
             model.Teams = RenderingContext.Current.ContextItem.Children;
             if (model.Teams != null)
             {
-                //model.Teams = model.Teams.OrderBy(x => x.Fields["Created Date"]);
+                model.Teams = model.Teams.ToList().OrderBy(x => x.Statistics.Created).ToList();
             }
             
             return View("/Views/Events/EventTeams.cshtml", model);
