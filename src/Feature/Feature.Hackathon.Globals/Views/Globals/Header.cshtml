@@ -12,12 +12,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                @*@foreach (var link in ItemHelper.GetMultiListParameterItems(ItemHelper.GetRootItem()["Navigation Links"]))
+                @foreach (var link in ItemHelper.GetMultiListParameterItems(ItemHelper.GetRootItem()["Navigation Links"]))
                 {
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="@ItemHelper.GetItemUrl(link)">@link.DisplayName</a>
                     </li>
-                }*@
+                }
             </ul>
         </div>
     </div>

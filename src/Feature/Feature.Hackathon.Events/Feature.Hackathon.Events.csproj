@@ -110,13 +110,18 @@
     <Content Include="Views\Events\FeaturedExternalEvents.cshtml" />
     <Content Include="Views\Events\ExternalEventCard.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="Views\Events\EventListing.cshtml" />
+    <Content Include="Views\Events\EventTeams.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EventTeamsController.cs" />
+    <Compile Include="Controllers\EventListingController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\EventTeamsViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -131,8 +136,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Foundation\Foundation.Hackathon.Helpers\Foundation.Hackathon.Helpers.csproj">

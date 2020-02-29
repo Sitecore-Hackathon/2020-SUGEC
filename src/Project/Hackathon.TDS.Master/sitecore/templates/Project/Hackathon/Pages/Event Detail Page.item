@@ -13,13 +13,27 @@ templatekey: Template
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
 name: __Base template
 key: __base template
+content-length: 77
+
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{5CCE8216-BFE9-4CA4-8580-28163A3883D2}
+----field----
+field: {F7D48A55-2158-4F02-9356-756654404F73}
+name: __Standard values
+key: __standard values
 content-length: 38
 
-{1930BBEB-7805-471A-A3BE-4858AC7CF696}
+{95DF9713-515B-4BA8-AE4C-589A205E9782}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 36
+
+applications/32x32/document_time.png
 ----version----
 language: en
 version: 1
-revision: b4c773a5-ed87-4e54-805a-c1e5550381de
+revision: e3a65ebc-9b5d-4362-a7e1-dcf167ff84c4
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b4c773a5-ed87-4e54-805a-c1e5550381de
+e3a65ebc-9b5d-4362-a7e1-dcf167ff84c4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20200229T012739Z
+20200229T121156Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

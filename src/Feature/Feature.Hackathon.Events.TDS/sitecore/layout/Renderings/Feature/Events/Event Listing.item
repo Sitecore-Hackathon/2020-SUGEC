@@ -1,32 +1,32 @@
 ----item----
 version: 1
-id: {E98EDDB8-A54B-448C-9EFF-93CB51BB8EC2}
+id: {467BFEF1-D15C-42BE-9E95-C99DFC2A0A0B}
 database: master
-path: /sitecore/layout/Renderings/Feature/Events/View rendering
+path: /sitecore/layout/Renderings/Feature/Events/Event Listing
 parent: {30F6044B-8D21-4F54-B23E-4082521246E6}
-name: View rendering
+name: Event Listing
 master: {00000000-0000-0000-0000-000000000000}
-template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
-templatekey: Controller rendering
+template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
+templatekey: View rendering
 
 ----field----
-field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
-name: Datasource Location
-key: datasource location
-content-length: 51
+field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
+name: Path
+key: path
+content-length: 34
 
-/sitecore/content/Hackathon/Modules/External Events
+~/Views/Events/EventListing.cshtml
 ----field----
-field: {1A7C85E5-DC0B-490D-9187-BB1DBCB4C72F}
-name: Datasource Template
-key: datasource template
-content-length: 61
+field: {308E88F5-CD6E-4F8F-BAFE-95A47DEDEFDC}
+name: Editable
+key: editable
+content-length: 0
 
-/sitecore/templates/Project/Hackathon/Modules/External Events
+
 ----version----
 language: en
 version: 1
-revision: 36fd34d8-2ec2-453a-a170-e9bcfbf00ce0
+revision: 785f2ef0-3bdc-48bc-87ee-a7dd2f643249
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20200229T085927Z
+20200229T051553Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-36fd34d8-2ec2-453a-a170-e9bcfbf00ce0
+785f2ef0-3bdc-48bc-87ee-a7dd2f643249
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20200229T090205Z
+20200229T105722Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

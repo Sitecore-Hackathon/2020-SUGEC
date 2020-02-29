@@ -127,6 +127,7 @@
   <ItemGroup>
     <None Include="Global.asax" />
     <Content Include="Views\Globals\RTFModule.cshtml" />
+    <Content Include="Views\Globals\RTFModuleLeftAligned.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
