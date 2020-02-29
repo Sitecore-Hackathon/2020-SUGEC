@@ -1,5 +1,4 @@
 ﻿using System.Web.Mvc;
-using Feature.Hackathon.Globals.Models;
 
 namespace Feature.Hackathon.Globals.Controllers
 {

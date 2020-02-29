@@ -1,4 +1,14 @@
-﻿@using Sitecore.Mvc
+﻿@using Foundation.Hackathon.Helpers.Helpers
+@using Sitecore.Mvc
+@model Feature.Hackathon.Globals.Models.FooterViewModel
+
 <div class="container">
-    <div class="small text-center text-muted">@Html.Sitecore().Field("Copyright", Sitecore.Context.Site.StartPath)</div>
-</div>
+    @if (!Sitecore.Context.PageMode.IsExperienceEditorEditing)
+    {
+        <div class="small text-center text-muted">@Model.CopyrightText</div>
+    }
+    else
+    {
+        <div class="small text-center text-muted">@Html.Sitecore().Field("Copyright", ItemHelper.GetRootItem())</div>
+    }
+    </div>

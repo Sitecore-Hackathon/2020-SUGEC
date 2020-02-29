@@ -1,25 +1,32 @@
 ----item----
 version: 1
-id: {2D5E67E1-07DC-4F0C-83E9-280E52B4D12F}
+id: {E83A1C88-7E93-47FE-8008-007842889B25}
 database: master
-path: /sitecore/templates/Project/Hackathon/Site
-parent: {62FEECE6-9D78-454A-B157-A9B45AE78068}
-name: Site
+path: /sitecore/templates/Feature/Globals/_Header/Header Settings/Logo
+parent: {C902DDDB-80B6-43C3-AF88-A31F358F030A}
+name: Logo
 master: {00000000-0000-0000-0000-000000000000}
-template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
-templatekey: Template
+template: {455A3E98-A627-4B40-8035-E683A0331AC7}
+templatekey: Template field
 
 ----field----
-field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
-name: __Base template
-key: __base template
-content-length: 77
+field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
+name: Type
+key: type
+content-length: 5
 
-{8C7F01CF-9604-4C03-B6DF-B8BAD49C5E65}|{2D9F6F1A-E8BD-45FE-B380-FF4A4914FC36}
+Image
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+100
 ----version----
 language: en
 version: 1
-revision: 8855c576-d18d-46a0-9aea-a416f5e80868
+revision: 5c885a6d-e3a9-4365-90bf-24814739ee31
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -27,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20200229T045235Z
+20200229T055809Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-8855c576-d18d-46a0-9aea-a416f5e80868
+5c885a6d-e3a9-4365-90bf-24814739ee31
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20200229T064647Z
+20200229T064538Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

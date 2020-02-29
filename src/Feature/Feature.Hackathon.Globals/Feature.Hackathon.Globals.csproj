@@ -125,7 +125,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Global.asax" />
+    <None Include="Global.asax" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +136,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\FooterViewModel.cs" />
     <Compile Include="Models\HeaderViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -145,7 +146,6 @@
     <None Include="packages.config" />
     <Content Include="Views\Globals\Footer.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <None Include="Views\web.config" />
     <None Include="packages.config" />
     <Content Include="Views\Globals\Banner.cshtml" />
     <None Include="Web.Debug.config">
@@ -157,8 +157,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\Banner\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation.Hackathon.Helpers\Foundation.Hackathon.Helpers.csproj">
+      <Project>{BD0006F7-CF41-42BA-BB05-D7C60E250E7A}</Project>
+      <Name>Foundation.Hackathon.Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
