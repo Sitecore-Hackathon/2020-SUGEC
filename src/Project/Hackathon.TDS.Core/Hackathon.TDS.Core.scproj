@@ -13,6 +13,9 @@
     <ManageRoles>False</ManageRoles>
     <SitecoreDatabase>core</SitecoreDatabase>
     <AssemblyStatus>Exclude</AssemblyStatus>
+    <SourceWebVirtualPath>/Hackathon.csproj</SourceWebVirtualPath>
+    <SourceWebProject>{6c0ea5b9-d09f-4baa-b5bc-9ffdbd67751a}|src\Project\Hackathon\Hackathon.csproj</SourceWebProject>
+    <SourceWebPhysicalPath>..\Hackathon</SourceWebPhysicalPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,6 +34,12 @@
     <AssemblyAttributes Include="AssemblyVersion">
       <Value>$(AssemblyVersion)</Value>
     </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hackathon\Hackathon.csproj">
+      <Project>{6c0ea5b9-d09f-4baa-b5bc-9ffdbd67751a}</Project>
+      <Name>Hackathon</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>

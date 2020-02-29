@@ -161,8 +161,8 @@
     <Folder Include="Views\Banner\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Foundation.Hackathon.Helpers\Foundation.Hackathon.Helpers.csproj">
-      <Project>{BD0006F7-CF41-42BA-BB05-D7C60E250E7A}</Project>
+    <ProjectReference Include="..\..\Foundation\Foundation.Hackathon.Helpers\Foundation.Hackathon.Helpers.csproj">
+      <Project>{a7ce9069-a856-4374-b059-e08cd4f2fa6a}</Project>
       <Name>Foundation.Hackathon.Helpers</Name>
     </ProjectReference>
   </ItemGroup>

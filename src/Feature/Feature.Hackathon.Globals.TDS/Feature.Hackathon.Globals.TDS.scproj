@@ -5,22 +5,24 @@
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>2bdeb9f9-6893-4560-bdd7-50ab816e2bac</ProjectGuid>
-    <SourceWebPhysicalPath>
-    </SourceWebPhysicalPath>
-    <SourceWebProject>
-    </SourceWebProject>
-    <SourceWebVirtualPath>
-    </SourceWebVirtualPath>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <CompactSitecoreItemsInProjectFile>True</CompactSitecoreItemsInProjectFile>
     <AssemblyName>Feature.Hackathon.Globals.TDS</AssemblyName>
     <Name>Feature.Hackathon.Globals.TDS</Name>
     <RootNamespace>Feature.Hackathon.Globals.TDS</RootNamespace>
+    <SourceWebVirtualPath>/Feature.Hackathon.Globals.csproj</SourceWebVirtualPath>
+    <SourceWebProject>{98b54b46-46a4-4423-bf2b-5a8f8f7bb6b3}|src\Feature\Feature.Hackathon.Globals\Feature.Hackathon.Globals.csproj</SourceWebProject>
+    <SourceWebPhysicalPath>..\Feature.Hackathon.Globals</SourceWebPhysicalPath>
+    <ManageRoles>False</ManageRoles>
+    <SitecoreDatabase>master</SitecoreDatabase>
+    <AssemblyStatus>Exclude</AssemblyStatus>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <EnableValidations>False</EnableValidations>
+    <ValidationSettingsFilePath>.\Feature.Hackathon.Globals.TDS_Debug.xml</ValidationSettingsFilePath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
