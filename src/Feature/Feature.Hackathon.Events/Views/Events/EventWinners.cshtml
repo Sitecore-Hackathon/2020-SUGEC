@@ -1,0 +1,33 @@
+﻿@using Foundation.Hackathon.Helpers.Helpers
+@using Sitecore.Links
+@using Sitecore.Mvc
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@if (string.IsNullOrWhiteSpace(Sitecore.Context.Item["Winners"]))
+{
+    return;
+}
+
+<section class="page-section text-center" id="portfolio">
+    <h2>@Html.Sitecore().Field("Winners Title")</h2>
+    <div class="container-fluid p-0">
+        <div class="row no-gutters d-flex justify-content-center">
+
+            @foreach (var item in ItemHelper.GetMultiListParameterItems(Sitecore.Context.Item["Winners"]))
+            {
+                <div class="col-lg-2">
+                    @*<a class="portfolio-box" href="#">*@
+                    <div class="portfolio-box project-name bg-primary" style="margin: 0 10px;">
+                        @Html.Sitecore().Field("Team Name", item)
+                    </div>
+                    <div class="project-category text-dark">
+                        @Html.Sitecore().Field("Participant 1 Name", item)<br />
+                        @Html.Sitecore().Field("Participant 2 Name", item)<br />
+                        @Html.Sitecore().Field("Participant 3 Name", item)
+                    </div>
+                    @*</a>*@
+                </div>
+            }
+        </div>
+    </div>
+</section>

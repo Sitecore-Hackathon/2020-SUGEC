@@ -10,12 +10,12 @@
 
             @foreach (var item in ItemHelper.GetMultiListParameterItems(Sitecore.Context.Item["Events"]))
             {
-                <div class="col-lg-2">
+                <div class="col-lg-2" style="@(ItemHelper.IsCurrentEvent(item) ? "background-color: red; border: 10px solid red; border-radius: 25px;" : null)">
                     <a class="portfolio-box" href="@ItemHelper.GetItemUrl(item, LinkManager.GetDefaultUrlBuilderOptions())">
                         @Html.Sitecore().Field("Thumbnail", item, new {@class = "img-fluid"})
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">
-                                Hackathon
+                                SITECORE
                             </div>
                             <div class="project-name">
                                 @Html.Sitecore().Field("Title", item)

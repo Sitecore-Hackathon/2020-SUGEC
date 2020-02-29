@@ -113,6 +113,8 @@
     <Content Include="Views\Events\EventListing.cshtml" />
     <Content Include="Views\Events\EventTeams.cshtml" />
     <Content Include="Views\Events\Judges.cshtml" />
+    <Content Include="Views\Events\EventWinners.cshtml" />
+    <Content Include="Views\Events\EventRegistration.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

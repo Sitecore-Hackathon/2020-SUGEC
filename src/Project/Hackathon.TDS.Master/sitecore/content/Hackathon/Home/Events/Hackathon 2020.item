@@ -12,7 +12,7 @@ templatekey: Event Detail Page
 ----version----
 language: en
 version: 1
-revision: a1d94dad-77a1-4fa1-b601-cf244443f9f6
+revision: ad81b048-8e0d-4dbf-9353-1b1e77af5649
 
 ----field----
 field: {4F4B97B5-90E9-41E4-AB85-DA80A2FB1938}
@@ -25,9 +25,43 @@ Hackathon 2020
 field: {50C83F75-941E-4B34-8F9E-9195084A57FF}
 name: Heading
 key: heading
-content-length: 10
+content-length: 11
 
-Categories
+Description
+----field----
+field: {A8C4BE3B-754E-40D6-A1FE-D4C390039A5F}
+name: Copy
+key: copy
+content-length: 3061
+
+<p>All teams are required to submit the following as part of their entry submission on or before the end of the Hackathon on Saturday February 29th 2020 at 8PM EST. The modules should be based on&nbsp;<a rel="noopener noreferrer" href="https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/93/Sitecore_Experience_Platform_93_Initial_Release.aspx" target="_blank" style="color: #bf3417; margin: 0px; padding: 0px; border: 0px;">Sitecore 9.3&nbsp;</a>and if you are using commerce it should be Sitecore Experience Commerce 9.3.</p>
+<ul>
+    <li style="margin: 0px 0px 1px; padding: 0px; border: 0px;">Deploy package (.zip) or a Sitecore Module install package with proper installation instructions</li>
+    <li style="margin: 0px 0px 1px; padding: 0px; border: 0px;">Module Code in the Git source repository (Provided)
+    <ul style="margin: 0px 0px 20px 2px; padding: 0px 0px 0px 20px; border: 0px; list-style-type: square; list-style-image: initial;">
+        <li style="margin: 0px 0px 1px; padding: 0px; border: 0px;">Cleanliness of code</li>
+        <li style="margin: 0px 0px 1px; padding: 0px; border: 0px;">Commenting where necessary</li>
+        <li style="margin: 0px 0px 1px; padding: 0px; border: 0px;">Code Structure</li>
+        <li style="margin: 0px 0px 1px; padding: 0px; border: 0px;">Standard coding standards &amp; naming conventions</li>
+    </ul>
+    </li>
+    <li style="margin: 0px 0px 1px; padding: 0px; border: 0px;"><strong style="margin: 0px; padding: 0px; border: 0px;">Precise and Clear Installation Instructions document (1 &ndash; 2 pages)</strong></li>
+    <li style="margin: 0px 0px 1px; padding: 0px; border: 0px;"><strong style="margin: 0px; padding: 0px; border: 0px;">Module usage documentation on Readme.md file on the Git Repository provided to you (2 &ndash; 5 pages)</strong>
+    <ul style="margin: 0px 0px 20px 2px; padding: 0px 0px 0px 20px; border: 0px; list-style-type: square; list-style-image: initial;">
+        <li style="margin: 0px 0px 1px; padding: 0px; border: 0px;">Module Purpose</li>
+        <li style="margin: 0px 0px 1px; padding: 0px; border: 0px;">Module Sitecore Hackathon Category</li>
+        <li style="margin: 0px 0px 1px; padding: 0px; border: 0px;">How does the end user use the Module?</li>
+        <li style="margin: 0px 0px 1px; padding: 0px; border: 0px;">Screenshots, etc.</li>
+    </ul>
+    </li>
+    <li style="margin: 0px 0px 1px; padding: 0px; border: 0px;"><strong style="margin: 0px; padding: 0px; border: 0px;">Create a 2 &ndash; 10 minutes video explaining the module&rsquo;s functionality (A link to youtube video)</strong>
+    <ul style="margin: 0px 0px 20px 2px; padding: 0px 0px 0px 20px; border: 0px; list-style-type: square; list-style-image: initial;">
+        <li style="margin: 0px 0px 1px; padding: 0px; border: 0px;">What problem was solved</li>
+        <li style="margin: 0px 0px 1px; padding: 0px; border: 0px;">How did you solve it</li>
+        <li style="margin: 0px 0px 1px; padding: 0px; border: 0px;">What is the end result</li>
+    </ul>
+    </li>
+</ul>
 ----field----
 field: {909C72CA-567A-48B7-914F-0A727F1F9756}
 name: Start Registration Date
@@ -50,6 +84,13 @@ content-length: 14
 
 Hackathon 2020
 ----field----
+field: {D81DD4F4-E8D3-4E8C-8E04-3242387ED0F5}
+name: Judges
+key: judges
+content-length: 155
+
+{E6FF78E9-141C-40F4-81B6-20273965479D}|{875CE2BB-2706-422A-9373-D532AB3A2945}|{5AC456BC-B621-4FEB-AB0B-82B6D9BF9EF8}|{6581CDE5-9801-4A0D-93D8-202349F3694C}
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -62,14 +103,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a1d94dad-77a1-4fa1-b601-cf244443f9f6
+ad81b048-8e0d-4dbf-9353-1b1e77af5649
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20200229T185935Z
+20200229T212633Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

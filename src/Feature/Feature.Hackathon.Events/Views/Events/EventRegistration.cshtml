@@ -1,0 +1,16 @@
+﻿@using Foundation.Hackathon.Helpers.Helpers
+@using Sitecore.Links
+@using Sitecore.Mvc
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@if (!ItemHelper.IsCurrentEvent(Sitecore.Context.Item))
+{
+    return;
+}
+
+<section class="page-section bg-dark text-white">
+    <div class="container text-center">
+        <h2 class="mb-4">Want to be part of this experience?</h2>
+        <a class="btn btn-light btn-xl" href="/Registration">Register Now!</a>
+    </div>
+</section>

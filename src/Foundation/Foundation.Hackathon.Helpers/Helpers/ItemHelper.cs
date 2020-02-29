@@ -243,7 +243,21 @@ namespace Foundation.Hackathon.Helpers.Helpers
             return field.DateTime.ToString(format);
         }
 
-        public static string GetMediaUrl(Item mediaItem)
+        public static bool IsCurrentEvent(Item item)
+        {
+            DateField eventStartDate = item.Fields["Start Registration Date"];
+            DateField eventEndDate = item.Fields["End Registration Date"];
+            var eventStartDateTime = eventStartDate.DateTime;
+            var eventEndDateTime = eventEndDate.DateTime;
+            if (eventStartDateTime <= DateTime.UtcNow && eventEndDateTime >= DateTime.UtcNow)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+    public static string GetMediaUrl(Item mediaItem)
         {
             string url = mediaItem != null
                 ? StringUtil.EnsurePrefix('/', MediaManager.GetMediaUrl((MediaItem)mediaItem))

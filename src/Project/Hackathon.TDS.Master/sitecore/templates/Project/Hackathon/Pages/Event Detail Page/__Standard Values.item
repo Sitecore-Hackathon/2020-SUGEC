@@ -20,13 +20,13 @@ content-length: 38
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 671
+content-length: 983
 
-<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{A75EABE2-5B94-4CA5-B991-13902B081F69}"><r id="{4B04535F-80F5-4C8B-83F5-92B407C1ABB3}" ph="Header" uid="{D3BB8D92-C0B8-4EB8-B626-19392E32AD75}" /><r id="{22DA1CE8-3949-451C-81DE-B481BB2BD921}" ph="Rows" uid="{2144C900-88EB-4F89-A9F1-CA8678CAEBB9}" /><r id="{72D41FA9-B22A-4E69-A67A-8E96D23C1FA5}" ph="Rows" uid="{541E281B-A552-4369-87A2-3FE0D04700C1}" /><r id="{EDB4B8AB-AB78-46B1-BD7A-FF3B7223833D}" ph="Rows" uid="{0787107A-35B2-4581-B245-2238346A219B}" /><r id="{04294A51-DAA1-4278-BB26-7DDE8F7EF693}" ph="Footer" uid="{751F4135-A7BC-4DD2-976D-8EF8B6DA4E47}" /></d></r>
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{A75EABE2-5B94-4CA5-B991-13902B081F69}"><r id="{4B04535F-80F5-4C8B-83F5-92B407C1ABB3}" ph="Header" uid="{D3BB8D92-C0B8-4EB8-B626-19392E32AD75}" /><r id="{22DA1CE8-3949-451C-81DE-B481BB2BD921}" ph="Rows" uid="{2144C900-88EB-4F89-A9F1-CA8678CAEBB9}" /><r id="{72D41FA9-B22A-4E69-A67A-8E96D23C1FA5}" ph="Rows" uid="{541E281B-A552-4369-87A2-3FE0D04700C1}" /><r id="{C74AEE7A-8AD2-40D9-9CF2-559CCD10A39C}" ph="Rows" uid="{30C74044-59CA-4163-B169-45C54CB24D33}" /><r id="{D4C305A1-947C-4CC6-BAC6-341AF01EB9EF}" ph="Rows" uid="{AFB86CCF-3B07-4A08-ABFF-1A9A98790D4A}" /><r id="{EDB4B8AB-AB78-46B1-BD7A-FF3B7223833D}" ph="Rows" uid="{0787107A-35B2-4581-B245-2238346A219B}" /><r id="{154D2CB1-2E40-4BE1-AE0C-85710CAFEC19}" ph="Rows" uid="{3131BDD6-BBC2-4C7C-89C1-C9D8B510839E}" /><r id="{04294A51-DAA1-4278-BB26-7DDE8F7EF693}" ph="Footer" uid="{751F4135-A7BC-4DD2-976D-8EF8B6DA4E47}" /></d></r>
 ----version----
 language: en
 version: 1
-revision: 8b686efb-0d3a-4262-b02d-671a8373fbd2
+revision: 24142f59-2965-4d3a-afe6-eaffcb3444ac
 
 ----field----
 field: {4F4B97B5-90E9-41E4-AB85-DA80A2FB1938}
@@ -57,6 +57,27 @@ content-length: 5
 
 $name
 ----field----
+field: {60091AAB-3F2F-4C49-8808-5DEFE11BAD27}
+name: Teams Title
+key: teams title
+content-length: 9
+
+THE TEAMS
+----field----
+field: {35BCDF0F-7E00-435C-A843-43B7C2CB5343}
+name: Judges Title
+key: judges title
+content-length: 10
+
+Our Judges
+----field----
+field: {0583CE1B-691D-411B-93EB-E6F2EA378CAB}
+name: Winners Title
+key: winners title
+content-length: 11
+
+The Winners
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -83,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8b686efb-0d3a-4262-b02d-671a8373fbd2
+24142f59-2965-4d3a-afe6-eaffcb3444ac
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20200229T124409Z
+20200229T213013Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

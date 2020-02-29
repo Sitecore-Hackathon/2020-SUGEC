@@ -1,7 +1,26 @@
 ﻿@using Sitecore.Mvc
 @model Feature.Hackathon.Events.Models.EventTeamsViewModel
 
-@foreach (var team in Model.Teams)
-{
-    <h3>@Html.Sitecore().Field("Team Name", team)</h3>
-}
+<section class="page-section text-center" id="portfolio">
+    <h2>@Html.Sitecore().Field("Teams Title")</h2>
+    <div class="container-fluid p-0">
+        <div class="row no-gutters d-flex justify-content-center">
+
+            @foreach (var team in Model.Teams)
+            {
+                <div class="col-lg-2">
+                    @*<a class="portfolio-box" href="#">*@
+                    <div class="portfolio-box project-name bg-primary" style="margin: 0 10px;">
+                        @Html.Sitecore().Field("Team Name", team)
+                    </div>
+                    <div class="project-category text-dark">
+                        @Html.Sitecore().Field("Participant 1 Name", team)<br />
+                        @Html.Sitecore().Field("Participant 2 Name", team)<br />
+                        @Html.Sitecore().Field("Participant 3 Name", team)
+                    </div>
+                    @*</a>*@
+                </div>
+            }
+        </div>
+    </div>
+</section>

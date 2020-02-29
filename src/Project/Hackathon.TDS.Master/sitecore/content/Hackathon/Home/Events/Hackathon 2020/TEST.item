@@ -1,0 +1,114 @@
+----item----
+version: 1
+id: {BCC3FEDD-F1EB-41DB-8573-66BA4F680517}
+database: master
+path: /sitecore/content/Hackathon/Home/Events/Hackathon 2020/TEST
+parent: {002613B4-A54E-4BF4-9D16-56BED811FEE5}
+name: TEST
+master: {00000000-0000-0000-0000-000000000000}
+template: {D83937F3-2F5D-41A3-8868-03F148ED43F2}
+templatekey: Team
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{BA1FAB67-75F7-420B-B44E-053F89490C6B}
+----version----
+language: en
+version: 1
+revision: f1fc5c32-b917-4fea-9750-1b94ed94d61a
+
+----field----
+field: {0C8EE320-D31B-4CBD-AC10-3A8C1FBC11EE}
+name: Team Name
+key: team name
+content-length: 4
+
+TEST
+----field----
+field: {EA04DF5F-C595-4919-B610-E8B4D2645272}
+name: Participant 1 Name
+key: participant 1 name
+content-length: 8
+
+Santiago
+----field----
+field: {CDA3E1BB-DF9F-41A6-A6AD-849B27E9E904}
+name: Participant 1 Email
+key: participant 1 email
+content-length: 14
+
+santi@mail.com
+----field----
+field: {3FCB4455-3AFB-4E86-ADC2-368262345D08}
+name: Participant 1 LinkedIn
+key: participant 1 linkedin
+content-length: 25
+
+https://www.linkedin.com/
+----field----
+field: {DADEC76C-F1CB-4C91-ACF4-D3BF03B0AB8C}
+name: Participant 1 Twitter
+key: participant 1 twitter
+content-length: 20
+
+https://twitter.com/
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20200229T202255Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f1fc5c32-b917-4fea-9750-1b94ed94d61a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20200229T202347Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{80AD4A03-0026-451F-AF4E-88DB7FA63DA1}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

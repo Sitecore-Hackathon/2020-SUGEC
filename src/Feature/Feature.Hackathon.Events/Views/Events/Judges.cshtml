@@ -3,8 +3,13 @@
 @using Sitecore.Mvc
 @model Sitecore.Mvc.Presentation.RenderingModel
 
+@if (string.IsNullOrWhiteSpace(Sitecore.Context.Item["Judges"]))
+{
+    return;
+}
+
 <section class="page-section text-center" id="portfolio">
-    <h2>@Html.Sitecore().Field("Events Title")</h2>
+    <h2>@Html.Sitecore().Field("Judges Title")</h2>
     <div class="container-fluid p-0">
         <div class="row no-gutters d-flex justify-content-center">
 
@@ -12,7 +17,7 @@
             {
                 <div class="col-lg-2">
 
-                    <a class="portfolio-box" href="/">
+                    <a class="portfolio-box" href="/" style="width: 240px;">
                         @Html.Sitecore().Field("Profile Image", item, new { @class = "img-fluid" })
                         <div class="portfolio-box-caption">
                             <div class="project-name">
