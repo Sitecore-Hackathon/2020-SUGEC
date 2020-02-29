@@ -248,7 +248,7 @@ namespace Foundation.Hackathon.Helpers.Helpers
             return field.DateTime.ToString(format);
         }
 
-       public static string GetMediaUrl(Item mediaItem)
+        public static string GetMediaUrl(Item mediaItem)
         {
             string url = mediaItem != null
                 ? StringUtil.EnsurePrefix('/', MediaManager.GetMediaUrl((MediaItem)mediaItem))
@@ -351,5 +351,5 @@ namespace Foundation.Hackathon.Helpers.Helpers
         }
 
     }
-    
+
 }
