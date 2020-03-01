@@ -296,7 +296,7 @@ namespace Foundation.Hackathon.Helpers.Helpers
             return linkedItems.ToList();
         }
 
-        public static IEnumerable<Item> GetMultiListParameterItems(string itemIds)
+        public static IEnumerable<Item> GetMultiListParameterItems(string itemIds, Database database = null)
         {
             if (string.IsNullOrEmpty(itemIds))
                 return null;
@@ -309,6 +309,10 @@ namespace Foundation.Hackathon.Helpers.Helpers
                 Guid id = Guid.Empty;
                 if (Guid.TryParse(itemId, out id))
                 {
+                    if (database != null)
+                    {
+                        database.GetItem((new ID(id)));
+                    }
                     item = Context.Database.GetItem(new ID(id));
                 }
                 return item;
@@ -317,9 +321,9 @@ namespace Foundation.Hackathon.Helpers.Helpers
             return itemList.Where(f => f != null);
         }
 
-        public static List<Item> GetMultiListParameterItemsList(string itemIds)
+        public static List<Item> GetMultiListParameterItemsList(string itemIds, Database database = null)
         {
-            var enumeration = GetMultiListParameterItems(itemIds);
+            var enumeration = GetMultiListParameterItems(itemIds, database);
             return enumeration?.ToList();
         }
 

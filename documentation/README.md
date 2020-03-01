@@ -18,7 +18,9 @@ Please follow this instructions to install this module:
 
 1. Use the Sitecore Installation wizard to install the [package](Resources/Hackathon2020-SUGEC-1.0.zip)
    - The package contains config and binaries files so pool recycle is expected. 
-2. Publish site (smart mode) when the site loads again.
+2. Use the Sitecore Installation wizard to install the [package](Resources/Teams_Workflow-1.0.zip)
+   - The package contains the workflow used to approve teams registrations. 
+3. Publish site (smart mode) when the site loads again.
 
 For more details, read our [Installation Guide](Installation_Guide.md)
 
@@ -112,6 +114,6 @@ That's everything you need to know about the complexity of this site!
 
 Here is our presentation of this module. 
 
-[direct link](resources/Sitecore%20Hackathon%202019.mp4) to the video. 
+[direct link](resources/video.mp4) to the video. 
 
-[![Sitecore Hackathon SUGEC](https://img.youtube.com/vi/sffI8ac8hPU/0.jpg)](https://youtu.be/1qN9hxwi5WE)
+[![Sitecore Hackathon SUGEC]](https://youtu.be/FaRBPfcwKoc)

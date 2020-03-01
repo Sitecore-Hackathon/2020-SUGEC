@@ -19,54 +19,59 @@ namespace Feature.Hackathon.Accounts.Repositories
 
         public void CreateTeamItem(RegistrationForm formData)
         {
-            using (new Sitecore.SecurityModel.SecurityDisabler())
+            Database master = Database.GetDatabase("master");
+            using (new Sitecore.Data.DatabaseSwitcher(master))
             {
-                Database master = Database.GetDatabase("master");
-
-                var template = master.GetTemplate(_TeamTemplateId);
-                
-                Item parentItem = GetCurrentRegistrationEvent();
-                
-                Item newItem = parentItem.Add(formData.TeamName, template);
-                
-                newItem.Editing.BeginEdit();
-                try
+                using (new Sitecore.SecurityModel.SecurityDisabler())
                 {
-                    newItem.Fields["Team Name"].Value = formData.TeamName;
-
-                    newItem.Fields["Participant 1 Name"].Value = formData.Name1;
-                    newItem.Fields["Participant 1 Email"].Value = formData.Email1;
-                    newItem.Fields["Participant 1 Twitter"].Value = formData.Twitter1;
-                    newItem.Fields["Participant 1 LinkedIn"].Value = formData.LinkedIn1;
-
-                    newItem.Fields["Participant 2 Name"].Value = formData.Name2;
-                    newItem.Fields["Participant 2 Email"].Value = formData.Email2;
-                    newItem.Fields["Participant 2 Twitter"].Value = formData.Twitter2;
-                    newItem.Fields["Participant 2 LinkedIn"].Value = formData.LinkedIn2;
-
-                    newItem.Fields["Participant 3 Name"].Value = formData.Name3;
-                    newItem.Fields["Participant 3 Email"].Value = formData.Email3;
-                    newItem.Fields["Participant 3 Twitter"].Value = formData.Twitter3;
-                    newItem.Fields["Participant 3 LinkedIn"].Value = formData.LinkedIn3;
 
 
-                    IWorkflow wf = master.WorkflowProvider.GetWorkflow(_WorkflowId);
-                    wf.Start(newItem);
+                    var template = master.GetTemplate(_TeamTemplateId);
 
-                    newItem.Editing.EndEdit();
-                }
-                catch (System.Exception ex)
-                {
-                    Sitecore.Diagnostics.Log.Error("Could not update item " + newItem.Paths.FullPath + ": " + ex.Message, this);
-                    newItem.Editing.CancelEdit();
+                    Item parentItem = GetCurrentRegistrationEvent(master);
+
+                    Item newItem = parentItem.Add(formData.TeamName, template);
+
+                    newItem.Editing.BeginEdit();
+                    try
+                    {
+                        newItem.Fields["Team Name"].Value = formData.TeamName;
+
+                        newItem.Fields["Participant 1 Name"].Value = formData.Name1;
+                        newItem.Fields["Participant 1 Email"].Value = formData.Email1;
+                        newItem.Fields["Participant 1 Twitter"].Value = formData.Twitter1;
+                        newItem.Fields["Participant 1 LinkedIn"].Value = formData.LinkedIn1;
+
+                        newItem.Fields["Participant 2 Name"].Value = formData.Name2;
+                        newItem.Fields["Participant 2 Email"].Value = formData.Email2;
+                        newItem.Fields["Participant 2 Twitter"].Value = formData.Twitter2;
+                        newItem.Fields["Participant 2 LinkedIn"].Value = formData.LinkedIn2;
+
+                        newItem.Fields["Participant 3 Name"].Value = formData.Name3;
+                        newItem.Fields["Participant 3 Email"].Value = formData.Email3;
+                        newItem.Fields["Participant 3 Twitter"].Value = formData.Twitter3;
+                        newItem.Fields["Participant 3 LinkedIn"].Value = formData.LinkedIn3;
+
+
+                        IWorkflow wf = master.WorkflowProvider.GetWorkflow(_WorkflowId);
+                        wf.Start(newItem);
+
+                        newItem.Editing.EndEdit();
+                    }
+                    catch (System.Exception ex)
+                    {
+                        Sitecore.Diagnostics.Log.Error("Could not update item " + newItem.Paths.FullPath + ": " + ex.Message, this);
+                        newItem.Editing.CancelEdit();
+                    }
                 }
             }
+            
         }
 
-        private Item GetCurrentRegistrationEvent()
+        private Item GetCurrentRegistrationEvent(Database database)
         {
-            var eventsRootItem = Sitecore.Context.Database.GetItem(_EventsRoot);
-            var events = ItemHelper.GetMultiListParameterItemsList(eventsRootItem["Events"]);
+            var eventsRootItem = database.GetItem(_EventsRoot);
+            var events = ItemHelper.GetMultiListParameterItemsList(eventsRootItem["Events"], database);
             foreach (var eventsc in events)
             {
                 DateField eventStartDate = eventsc.Fields["Start Registration Date"];

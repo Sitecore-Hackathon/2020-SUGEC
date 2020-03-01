@@ -9,11 +9,14 @@ Please follow this instructions to install this module:
 
 1. Sitecore package [package](Resources/Hackathon2020-SUGEC-1.0.zip)
 	- Use the Sitecore Installation Wizard to upload the package and install the module. This will install all Sitecore items and files necessary to run the new site in a new instance of Sitecore 9.3.
+
+2. Sitecore package [package](Resources/Teams-Workflow-1.0.zip)
+	- Use the Sitecore Installation Wizard to upload the package and install the workflow items needed to approve team registrations.
 	
-2. Publish Site
+3. Publish Site
 	- Run a smart publish of the site
 	
-3. Verify the Hackathon Site was installed.
+4. Verify the Hackathon Site was installed.
 	- You will see a new Site node under sitecore/content/
 		
 > Note: No additional file configurations are required. The SiteDefinitions you can find under App_Config/Include/Project/
