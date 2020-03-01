@@ -116,4 +116,4 @@ Here is our presentation of this module.
 
 [direct link](resources/video.mp4) to the video. 
 
-[![Sitecore Hackathon SUGEC]](https://youtu.be/FaRBPfcwKoc)
+[Sitecore Hackathon SUGEC YouTube video](https://youtu.be/FaRBPfcwKoc)
